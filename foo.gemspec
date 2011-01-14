@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'builder_foo'
-  s.version     = '0.1'
+  s.version     = '0.2'
   s.summary     = 'Test gem to demonstrate strangeness with builder gem install'
   s.description = 'Totally useless gem.  For testing purposes only.'
 
@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency('activemerchant', '= 1.7.1')
-  s.add_dependency('rails', '= 3.0.3')
+  s.add_dependency('builder', '>= 2.0.0')
+  s.add_dependency('activemodel', '3.0.3')
 end
